@@ -1,7 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   caret-color: transparent;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+}
+
+.sidebar {
+  background-color: rgb(14, 165, 233);
+  height: 100vh;
+  color: white;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+.logo-text > img {
+  height: 60px;
+  width: auto;
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.icon-text p {
+  margin-left: 15px;
+  margin-top: 10px;
+  font-size: 2rem;
+}
+
+.sidebar-options-bottom {
+  margin-top: 100px;
 }
 
 .main-grid {
@@ -9,24 +57,4 @@
   background-color: rgb(109, 40, 217);
   grid-template-columns: 20% 80%;
   height: 100vh;
-}
-
-.sidebar {
-  background-color: rgb(14, 165, 233);
-  height: 100vh;
-}
-
-.logo-dashboard {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  padding: 10px;
-  margin-top: 10px;
-}
-
-.logo-dashboard > img {
-  height: 60px;
-  width: auto;
 }
