@@ -66,7 +66,7 @@ body {
 
 .header-grid {
   display: grid;
-  background-color: green;
+  background-color: hsl(204, 100%, 97%);
   grid-template-columns: 60% 40%;
   grid-template-rows: 50% 50%;
 }
@@ -85,7 +85,9 @@ body {
   border-radius: 15px;
   padding: 5px;
   caret-color: black;
+  background-color: hsl(214, 95%, 93%);
   outline: rgb(14, 165, 233);
+  font-size: 20px;
 }
 
 .user-info {
@@ -135,5 +137,68 @@ body {
   display: grid;
   grid-column: 2 / 3;
   grid-row: 2 / 4;
-  background-color: rgb(113, 113, 122);
+  background-color: hsl(214, 95%, 93%);
+  grid-template-columns: 70% 30%;
+  height: 100%;
+}
+
+.projects-title {
+  display: flex;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+.project-cells {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: wrap;
+  border: solid 1px black;
+  width: 350px;
+  height: 150px;
+  margin-top: 5%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px;
+  border-left: 6px solid rgb(100, 200, 150);
+  background-color: whitesmoke;
+}
+
+.card p {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.card-options {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.assignments {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  background-color: green;
+}
+
+.trending {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background-color: blue;
 }
